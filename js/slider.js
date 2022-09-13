@@ -5,11 +5,11 @@ new Swiper('.portfolio__slider', {
 	spaceBetween: -10,
 	grabCursor: true,
 	slideToClickedSlide: true,
-	speed: 1000,
 	preloadImages: false,
 	watchSlidesProgress: true,
 	watchSlidesVisibility: true,
 	parallax: true,
+	speed: 1000,
 
 	lazy: {
 		loadOnTransitionStart: true,
@@ -21,9 +21,7 @@ new Swiper('.portfolio__slider', {
 		disableOnInteraction: false,
 	},
 
-	hashNavigation: {
-		watchState: true,
-	},
+	hashNavigation: {},
 
 	keyboard: {
 		enabled: true,
@@ -43,11 +41,13 @@ new Swiper('.portfolio__slider', {
 
 new Swiper('.blog__row', {
 	slidesPerView: 3,
-	speed: 1000,
+	spaceBetween: 5,
+	slideToClickedSlide: true,
 	preloadImages: false,
 	watchSlidesProgress: true,
 	watchSlidesVisibility: true,
 	parallax: true,
+	speed: 1000,
 
 	lazy: {
 		loadOnTransitionStart: true,
@@ -59,26 +59,23 @@ new Swiper('.blog__row', {
 		disableOnInteraction: false,
 	},
 
-	hashNavigation: {
-		watchState: true,
-	},
+	hashNavigation: {},
 
 	breakpoints: {
 		320: {
-			spaceBetween: 0,
 			slidesPerView: 1,
-			watchOverflow: false,
 			loop: true,
 			loopedSlides: 3,
 		},
 		420: {
 			slidesPerView: "auto",
+			loop: true,
+			loopedSlides: 3,
 		},
 		768: {
 			slidesPerView: 3,
 			watchOverflow: true,
 			loop: false,
-			loopedSlides: 0,
 			parallax: false,
 		},
 		1140: {
@@ -91,4 +88,4 @@ new Swiper('.blog__row', {
 document.addEventListener('scroll', () => {
 	if (window.pageYOffset > 40) document.querySelector('.header').classList.add('active');
 	if (window.pageYOffset < 40) document.querySelector('.header').classList.remove('active');
-})
+});

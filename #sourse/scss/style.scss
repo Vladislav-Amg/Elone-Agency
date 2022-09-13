@@ -1137,8 +1137,8 @@ body {
 		justify-content: space-between;
 		align-items: center;
 
-		@media (max-width: 500px) {
-			flex-direction: column;
+		@media (max-width: 600px) {
+			flex-direction: column-reverse;
 		}
 	}
 
@@ -1146,16 +1146,22 @@ body {
 		&:first-child {
 			flex: 0 1 70%;
 
-			@media (max-width: 767.98px) {
-				flex: 0 1 120%;
+			@media (max-width: 991.98px) {
+				flex: 1 1 auto;
 			}
 		}
 
 		&:last-child {
 			flex: 0 1 30%;
 
-			@media (max-width: 767.98px) {
+			@media (max-width: 991.98px) {
 				flex: 1 1 auto;
+				text-align: right;
+			}
+
+			@media (max-width: 600px) {
+				margin: 0px 0px 20px 0px;
+				text-align: center;
 			}
 		}
 	}
@@ -1168,7 +1174,15 @@ body {
 		color: inherit;
 
 		&:first-child {
-			margin: 0px 40px 10px 0px;
+			margin: 0px 40px 0px 0px;
+
+			@media (max-width: 767.98px) {
+				margin: 0px 20px 0px 0px;
+			}
+
+			@media (max-width: 600px) {
+				margin: 0px 40px 0px 0px;
+			}
 		}
 	}
 
