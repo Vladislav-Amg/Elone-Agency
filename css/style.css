@@ -970,12 +970,10 @@ body.lock {
   margin: 0px 0px 10px -8px;
 }
 .blog__subtitle {
-  -moz-text-align-last: left;
-       text-align-last: left;
+  text-align: left;
 }
 .blog__text {
-  -moz-text-align-last: left;
-       text-align-last: left;
+  text-align: left;
 }
 .about-us {
   margin: 0px 0px 120px 0px;
