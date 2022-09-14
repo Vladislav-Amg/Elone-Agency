@@ -966,9 +966,36 @@ body.lock {
 .blog__column {
   width: auto;
 }
+.blog__image {
+  position: relative;
+}
 .blog__image img {
   max-width: 100%;
   margin: 0px 0px 10px -8px;
+}
+.blog__image::before {
+  content: "";
+  position: absolute;
+  top: 22px;
+  left: 8px;
+  display: inline-block;
+  height: 24px;
+  line-height: 24px;
+  background: -o-linear-gradient(352.06deg, #FFC52E 0.35%, #FFE148 98.8%);
+  background: linear-gradient(97.94deg, #FFC52E 0.35%, #FFE148 98.8%);
+  padding: 0px 8px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #1E1A17;
+}
+.blog__image_1::before {
+  content: "Game Development";
+}
+.blog__image_2::before {
+  content: "Design";
+}
+.blog__image_3::before {
+  content: "E-commerce";
 }
 .blog__subtitle {
   text-align: left;

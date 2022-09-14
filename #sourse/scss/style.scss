@@ -890,11 +890,40 @@ body {
 	&__content {}
 
 	&__image {
+		position: relative;
+
 		img {
 			max-width: 100%;
 			margin: 0px 0px 10px -8px;
 
 			@media (max-width: 767.98px) {}
+		}
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: 22px;
+			left: 8px;
+			display: inline-block;
+			height: 24px;
+			line-height: 24px;
+			background: linear-gradient(97.94deg, #FFC52E 0.35%, #FFE148 98.8%);
+			padding: 0px 8px;
+			font-weight: 500;
+			font-size: 16px;
+			color: #1E1A17;
+		}
+
+		&_1::before {
+			content: "Game Development";
+		}
+
+		&_2::before {
+			content: "Design";
+		}
+
+		&_3::before {
+			content: "E-commerce";
 		}
 	}
 
